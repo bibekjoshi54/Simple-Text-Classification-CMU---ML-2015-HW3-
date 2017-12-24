@@ -1,4 +1,4 @@
 
 
-def prior(y,val = 1):
-    return y[y['0'] == val].shape[0]/y.shape[0]
+def prior(y):
+    return y[y['0'] == 0].shape[0]/y.shape[0]
