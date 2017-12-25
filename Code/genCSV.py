@@ -14,6 +14,4 @@ def genCSV():
             data[k] = hw3Data[k]
     for i in data:
         print('Generating ' + i + '.csv')
-        pd.DataFrame(data[i]).to_csv('../Data/'+i+'.csv')
-
-genCSV()
+        pd.DataFrame(data[i]).to_csv('../Data/'+i+'.csv',index=False)
